@@ -18,12 +18,12 @@ fun main() {
     println(
         "TaskC --> ${
             taskC(
-                -1,
+                20,
                 mutableMapOf(
                     "Milk" to 24.5,
                     "Apple" to 13.4,
                     "Pear" to 100.0,
-                    "Pack" to 0.011
+                    "Pack" to 0.0
                 )
             )
         }"
@@ -90,7 +90,7 @@ fun taskC(x: Int, items: MutableMap<String, Double>): ArrayList<Product> {
             )
         )
     }
-    products.sortByDescending { it.price as? Comparable<Any> }
+    products.sortByDescending { it.price as? Double }
     products.forEach { if (it.price == 0.0) it.price = "Бесплатно" }
     return products
 }
