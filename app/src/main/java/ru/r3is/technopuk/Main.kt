@@ -23,7 +23,7 @@ fun main() {
                     "Milk" to 24.5,
                     "Apple" to 13.4,
                     "Pear" to 100.0,
-                    "Pack" to 0.011
+                    "Pack" to 0.0
                 )
             )
         }"
